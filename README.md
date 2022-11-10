@@ -4,7 +4,7 @@
   Author: nisabek richard.hauswald
   -->
 
-# icinga2-Teams-notifications
+# icinga2-teams-notifications
 Icinga2 notification integration with Teams
 
 ## Overview
