@@ -25,29 +25,6 @@ Native, easy to use Icinga2 `NotificationCommand` to send Host and Service notif
 * Debian ready-to-use package to reduce maintenance and automated installation effort
 * Uses Lambdas!
 
-## Why another approach?
-
-We found the following 2 existing Icinga2 to Teams integrations. 
-
-* https://github.com/spjmurray/Teams-icinga2
-
-  This plugin provides a polling interface towards Icinga2, giving the possibility to query the Icinga2 API and get information. 
-  
-  Since we cannot open our firewalls to enable access for Teams servers to our Icinga2 instances, we need to
-  have Icinga2 sending push notifications to Teams to report our Host and Service state changes.
-* https://github.com/jjethwa/icinga2-Teams-notification
-  
-  The plugin provides the possibility to send NotificationCommand to Teams, however we found the following 
-  downsides to be show stoppers for us:
-   * Does not use Lambdas!
-   * The Integration is time consuming and cumbersome
-   * The author requires you to modify his source files in order to configure the Teams webhook and channel. So we'd 
-   have to configure everything again when we have to install an update of that integration.
-   * No Debian package available, which leads to increased installation and maintenance effort.
-   * Numerous bugs since the host output is not properly encoded:
-     * as shell argument before it's passed to the shell script
-     * as JSON before it's send to Teamss REST API
-
 ## Installation 
 
 ### Installation using Debian package
@@ -150,7 +127,7 @@ In order to enable the Teams-notifications **for Hosts** add `vars.Teams_notific
    check_interval = 1m
    retry_interval = 30s
  
-   vars.Teams_notifications = "enabled"
+   vars.Teams_notification_groups = "team_x"
  }
  ```
 
