@@ -11,19 +11,11 @@ Icinga2 notification integration with Teams
 
 Native, easy to use Icinga2 `NotificationCommand` to send Host and Service notifications to pre-configured Teams channel - with only 1 external dependency: `curl`
 
-Also available on <a href="https://exchange.icinga.com/richardhauswald/icinga2-Teams-notifications" target="_blank">Icinga2 exchange portal</a>
-
 ## What will I get?
 * Awesome Teams notifications:
 
 <p align="center">
-  <img src="https://github.com/nisabek/icinga2-Teams-notifications/raw/master/docs/Notification-Examples.png" width="600">
-</p>
-
-* Mobile Icinga monitoring alerts as well:
-
-<p align="center">
-  <img src="https://github.com/nisabek/icinga2-Teams-notifications/raw/master/docs/Notification-Examples-mobile.png" width="400">
+  <img src="https://github.com/lko23/icinga2-teams-notifications/raw/master/Notification-Example.png" width="600">
 </p>
 
 * Notifications inside Teams about your Host and Service state changes
